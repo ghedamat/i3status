@@ -92,7 +92,7 @@ void print_battery_info(yajl_gen json_gen, char *buffer, int number, const char 
                  * later. */
                 else if (BEGINS_WITH(last, "POWER_SUPPLY_POWER_NOW"))
                         present_rate = atoi(walk+1);
-                else if (BEGINS_WITH(last, "POWER_SUPPLY_STATUS=Charging"))
+                else if (BEGINS_WITH(last, "POWER_SUPPLY_STATUS=Unknown"))
                         status = CS_CHARGING;
                 else if (BEGINS_WITH(last, "POWER_SUPPLY_STATUS=Full"))
                         status = CS_FULL;
