@@ -22,8 +22,8 @@
 #endif
 
 #define BATT_STATUS_NAME(status) \
-    (status == CS_CHARGING ? "CHR" : \
-        (status == CS_DISCHARGING ? "BAT" : "FULL"))
+    (status == CS_CHARGING ? "\u279A" : \
+        (status == CS_DISCHARGING ? "\u2798" : "FULL"))
 /*
  * Get battery information from /sys. Note that it uses the design capacity to
  * calculate the percentage, not the last full capacity, so you can see how
